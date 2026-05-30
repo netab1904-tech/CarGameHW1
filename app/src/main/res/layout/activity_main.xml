@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/main_LAY_hearts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#DDDDDD">
+
+        <ImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/heart" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_LAY_road"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#444444" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#555555" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#444444" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_IMG_obstacle1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/obstacle"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/main_IMG_obstacle2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/obstacle"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/main_IMG_obstacle3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/obstacle"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/main_IMG_car1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/car"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/main_IMG_car2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/car"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/main_IMG_car3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/car"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_LAY_controls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#CCCCCC">
+
+        <Button
+            android:id="@+id/main_BTN_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="&lt;"
+            android:textSize="24sp"
+            android:backgroundTint="#870E47" />
+
+        <Button
+            android:id="@+id/main_BTN_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="&gt;"
+            android:textSize="24sp"
+            android:backgroundTint="#870E47" />
+    </LinearLayout>
+</LinearLayout>
