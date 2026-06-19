@@ -13,4 +13,4 @@ This is an interactive 2D car game built natively in Android Studio using Kotlin
 
 ##  Gameplay Demonstration
 [Click here to watch the gameplay video]
-https://drive.google.com/file/d/1lVXeCnvraSrEBTixXxFrwRIdgDjpjrPp/view?usp=sharing
+https://drive.google.com/file/d/1XGlu5epaWolzCamdlwv6C60FTZHv42ro/view?usp=sharing
